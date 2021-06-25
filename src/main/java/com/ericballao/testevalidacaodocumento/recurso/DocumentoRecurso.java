@@ -23,7 +23,10 @@ import com.ericballao.testevalidacaodocumento.entidade.Documento;
 import com.ericballao.testevalidacaodocumento.response.Response;
 import com.ericballao.testevalidacaodocumento.servico.DocumentoServico;
 
+import io.micrometer.core.annotation.Timed;
+
 @RestController
+@Timed
 @RequestMapping("/api/documento")
 public class DocumentoRecurso {
 	
